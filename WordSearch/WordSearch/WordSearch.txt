@@ -1,0 +1,1 @@
+./bin/main.cpp.o ./bin/Word.cpp.o   
