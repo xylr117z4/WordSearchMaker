@@ -6,6 +6,12 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 	srand(time(NULL));
 	
+	sf::Font font;
+	font.loadFromFile("LiberationSans-Regular.ttf");
+	sf::Text text;
+	text.setFont(font);
+	std::stringstream ss;
+	
 	std::string list[10] = {"hello", "nope", "yep", "test", "no", "yes", "twenty", "thirty", "fourty", "fifty"};
 	std::vector<Word> words;
 	Registry reg;
@@ -27,8 +33,16 @@ int main(){
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+		
+		ss.str("");
+		ss << sf::Mouse::getPosition(window).x/24 << ", " << sf::Mouse::getPosition(window).y/24;
+		text.setString(ss.str());
+		
         // Clear screen
         window.clear();
+		
+		// Draw Mouse Pos
+		window.draw(text);
 		
 		for(unsigned int i = 0; i < words.size(); ++i){
 			words[i].draw(window);
