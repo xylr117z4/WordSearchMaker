@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=WordSearch
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\Tyler Green\Documents\Codelite\WordSearch"
-ProjectPath            := "C:\Users\Tyler Green\Documents\Codelite\WordSearch\WordSearch"
+WorkspacePath          := "C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch"
+ProjectPath            := "C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch"
 IntermediateDirectory  :=./bin
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -62,7 +62,7 @@ AS       := "C:/Program Files (x86)/mingw-w64/i686-5.3.0-win32-dwarf-rt_v4-rev0/
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Word.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Word.cpp$(ObjectSuffix) $(IntermediateDirectory)/Registry.cpp$(ObjectSuffix) 
 
 
 
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Tyler Green/Documents/Codelite/WordSearch/WordSearch/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Tyler Green/Documents/GitHub/WordSearchMaker/WordSearch/WordSearch/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
@@ -102,12 +102,20 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/Word.cpp$(ObjectSuffix): Word.cpp $(IntermediateDirectory)/Word.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Tyler Green/Documents/Codelite/WordSearch/WordSearch/Word.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Word.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Tyler Green/Documents/GitHub/WordSearchMaker/WordSearch/WordSearch/Word.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Word.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Word.cpp$(DependSuffix): Word.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Word.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Word.cpp$(DependSuffix) -MM "Word.cpp"
 
 $(IntermediateDirectory)/Word.cpp$(PreprocessSuffix): Word.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Word.cpp$(PreprocessSuffix) "Word.cpp"
+
+$(IntermediateDirectory)/Registry.cpp$(ObjectSuffix): Registry.cpp $(IntermediateDirectory)/Registry.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Tyler Green/Documents/GitHub/WordSearchMaker/WordSearch/WordSearch/Registry.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Registry.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Registry.cpp$(DependSuffix): Registry.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Registry.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Registry.cpp$(DependSuffix) -MM "Registry.cpp"
+
+$(IntermediateDirectory)/Registry.cpp$(PreprocessSuffix): Registry.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Registry.cpp$(PreprocessSuffix) "Registry.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
