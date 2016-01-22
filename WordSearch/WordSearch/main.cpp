@@ -22,9 +22,6 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 	srand(time(NULL));
 	
-	getFilesInDir(".");
-	getFilesInDir("json");
-	
 	sf::Font font;
 	font.loadFromFile("LiberationSans-Regular.ttf");
 	sf::Text text;
@@ -42,7 +39,7 @@ int main(){
 		words.push_back(temp);
 	}
 	
-	reg.findOverLaps();
+	reg.findCollisions();
     
     while (window.isOpen()){
         // Process events

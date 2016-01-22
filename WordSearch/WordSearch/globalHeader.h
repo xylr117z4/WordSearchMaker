@@ -9,3 +9,7 @@
 #include <math.h>
 #include <dirent.h>
 #define M_PI 3.14159265358979323846
+
+namespace ws{
+	typedef std::vector<std::tuple<int, int>> vector; //create a quick way to get a tuple vector
+};

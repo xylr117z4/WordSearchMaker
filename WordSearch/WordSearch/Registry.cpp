@@ -3,13 +3,13 @@
 Registry::Registry(){
 }
 
-void Registry::registerPositions(std::vector<std::tuple<int, int>> poses){
+void Registry::registerPositions(ws::vector poses){
 	for(unsigned int i = 0; i < poses.size(); ++i){
 		positions.push_back(poses[i]);
 	}
 }
 
-void Registry::findOverLaps(){
+void Registry::findCollisions(){
 	std::sort(positions.begin(), positions.end());
 	std::tuple<int, int> temp;
 	for(unsigned int i = 0; i < positions.size(); ++i){
