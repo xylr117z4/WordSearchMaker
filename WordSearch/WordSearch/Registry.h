@@ -8,7 +8,8 @@ public:
 	Registry();
 	~Registry();
 	ws::vector positions;
-	void registerPositions(ws::vector poses);
+	std::vector<int> ids;
+	void registerWord(ws::vector poses);
 	void findCollisions();
 
 };

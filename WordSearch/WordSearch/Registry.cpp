@@ -3,9 +3,11 @@
 Registry::Registry(){
 }
 
-void Registry::registerPositions(ws::vector poses){
+void Registry::registerWord(ws::vector poses){
+	int startSize = ids.size();
 	for(unsigned int i = 0; i < poses.size(); ++i){
 		positions.push_back(poses[i]);
+		ids.push_back(startSize+1);
 	}
 }
 
@@ -20,7 +22,7 @@ void Registry::findCollisions(){
 			std::tuple<int, int> workingTemp = std::make_tuple(std::get<0>(positions[c]), std::get<1>(positions[c]));
 			if(c != i){
 				if(temp == workingTemp){
-					printf("probably a collision, X1: %d Y1: %d, X2: %d Y2: %d\n\n", std::get<0>(temp), std::get<1>(temp), std::get<0>(workingTemp), std::get<1>(workingTemp));
+					printf("probably a collision:\nID1: %d X1: %d Y1: %d\nID2: %d X2: %d Y2: %d\n\n", ids[i], std::get<0>(temp), std::get<1>(temp), ids[c], std::get<0>(workingTemp), std::get<1>(workingTemp));
 				}
 			}			
 		}

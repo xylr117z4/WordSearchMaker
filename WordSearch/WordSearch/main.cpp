@@ -31,11 +31,12 @@ int main(){
 	std::string list[10] = {"hello", "nope", "yep", "test", "no", "yes", "twenty", "thirty", "fourty", "fifty"};
 	std::vector<Word> words;
 	Registry reg;
+	
 	for(unsigned int i = 0; i < 10; ++i){
 		Word temp;
 		temp.setWord(list[i]);
 		temp.slide((rand()%14)+6, (rand()%14)+6, rand()%8);
-		reg.registerPositions(temp.positions);
+		reg.registerWord(temp.positions);
 		words.push_back(temp);
 	}
 	
