@@ -7,9 +7,10 @@ class Registry{
 public:
 	Registry();
 	~Registry();
-	std::vector<std::tuple<int , int>> positions;
-	void registerPositions(std::vector<std::tuple<int, int>> poses);
-	void findOverLaps();
+	ws::vector positions;
+	std::vector<int> ids;
+	void registerWord(ws::vector poses);
+	void findCollisions();
 
 };
 

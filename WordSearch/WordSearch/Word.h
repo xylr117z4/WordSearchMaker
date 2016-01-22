@@ -8,9 +8,10 @@ public:
 	Word();
 	~Word();
 	std::vector<char> characters;
-	std::vector<std::tuple<int, int>> startPositions;
-	std::vector<std::tuple<int, int>> positions;
+	ws::vector startPositions;
+	ws::vector positions;
 	void addChar(char character);
+	void setID(int id);
 	void setWord(std::string word);
 	void setPosition(int x, int y);
 	void slide(int x, int y, int dir);
