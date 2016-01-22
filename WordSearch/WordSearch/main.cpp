@@ -1,10 +1,29 @@
 #include "globalHeader.h"
 #include "classes.h"
 
+void getFilesInDir(std::string dir){
+	DIR *dirp;
+	dirp = opendir(dir.c_str());
+	
+	struct dirent *dp;
+	
+	do{
+		if((dp = readdir(dirp)) != NULL){
+			printf("found %s\n", dp->d_name);
+		}
+		else{
+			closedir(dirp);
+		}
+	} while(dp != NULL);
+}
+
 int main(){
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 	srand(time(NULL));
+	
+	getFilesInDir(".");
+	getFilesInDir("json");
 	
 	sf::Font font;
 	font.loadFromFile("LiberationSans-Regular.ttf");

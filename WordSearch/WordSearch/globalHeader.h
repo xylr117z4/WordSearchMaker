@@ -7,4 +7,5 @@
 #include <fstream>
 #include <json.hpp>
 #include <math.h>
+#include <dirent.h>
 #define M_PI 3.14159265358979323846
