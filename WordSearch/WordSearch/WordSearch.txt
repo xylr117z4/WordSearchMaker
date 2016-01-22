@@ -1,1 +1,1 @@
-./bin/main.cpp.o ./bin/Word.cpp.o   
+./bin/main.cpp.o ./bin/Word.cpp.o ./bin/Registry.cpp.o   

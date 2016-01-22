@@ -1,26 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch.workspace">
+<<<<<<< HEAD
+  <int Value="4" Name="m_selectedTab"/>
+=======
   <int Value="0" Name="m_selectedTab"/>
+>>>>>>> refs/remotes/origin/master
   <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\main.cpp" Name="FileName"/>
+<<<<<<< HEAD
+      <int Value="9" Name="FirstVisibleLine"/>
+      <int Value="37" Name="CurrentLine"/>
+=======
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="12" Name="CurrentLine"/>
+>>>>>>> refs/remotes/origin/master
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
+<<<<<<< HEAD
+      <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\Word.h" Name="FileName"/>
+=======
       <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\classes.h" Name="FileName"/>
+>>>>>>> refs/remotes/origin/master
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
+<<<<<<< HEAD
+      <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\Word.cpp" Name="FileName"/>
+      <int Value="63" Name="FirstVisibleLine"/>
+      <int Value="79" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\Registry.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\Registry.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\classes.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="1" Name="CurrentLine"/>
+=======
       <wxString Value="C:\Users\Tyler Green\Documents\GitHub\WordSearchMaker\WordSearch\WordSearch\globalHeader.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="9" Name="CurrentLine"/>
+>>>>>>> refs/remotes/origin/master
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

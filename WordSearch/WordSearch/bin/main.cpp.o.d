@@ -71,7 +71,7 @@ bin/main.cpp.o: main.cpp globalHeader.h \
  C:/Program\ Files\ (x86)/mingw-w64/i686-5.3.0-win32-dwarf-rt_v4-rev0/mingw32/SFML/include/SFML/Graphics/Sprite.hpp \
  C:/Program\ Files\ (x86)/mingw-w64/i686-5.3.0-win32-dwarf-rt_v4-rev0/mingw32/SFML/include/SFML/Graphics/Text.hpp \
  C:/Program\ Files\ (x86)/mingw-w64/i686-5.3.0-win32-dwarf-rt_v4-rev0/mingw32/json/include/json.hpp \
- classes.h word.h
+ classes.h word.h registry.h
 
 globalHeader.h:
 
@@ -222,3 +222,5 @@ C:/Program\ Files\ (x86)/mingw-w64/i686-5.3.0-win32-dwarf-rt_v4-rev0/mingw32/jso
 classes.h:
 
 word.h:
+
+registry.h:
