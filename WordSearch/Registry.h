@@ -7,11 +7,11 @@ class Registry{
 public:
 	Registry();
 	~Registry();
-	std::vector<std::tuple<int,int,int>> positions;
+	std::vector<std::tuple<int,int, int,int>> wordData;
 	int wordCount;
-	void registerWord(ws::vector poses);
-	void findCollisions();
-
+	void registerWord(ws::vector poses, int dir);
+	std::vector<int> findCollisions();
+	bool alreadyBeingMoved(std::vector<int> moving, int id);
 };
 
 #endif // REGISTRY_H

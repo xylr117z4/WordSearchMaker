@@ -36,6 +36,7 @@ void Word::slide(int x, int y, int dir){
 }
 
 void Word::rotate(int dir){
+	direction = dir;
 	int x = 0;
 	int y = 0;
 	int startX = std::get<0>(startPositions[0]);

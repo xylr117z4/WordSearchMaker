@@ -10,6 +10,7 @@ public:
 	std::vector<char> characters;
 	ws::vector startPositions;
 	ws::vector positions;
+	int direction;
 	void addChar(char character);
 	void setID(int id);
 	void setWord(std::string word);

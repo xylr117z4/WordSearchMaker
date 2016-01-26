@@ -36,11 +36,14 @@ int main(){
 		Word temp;
 		temp.setWord(list[i]);
 		temp.slide((rand()%14)+6, (rand()%14)+6, rand()%8);
-		reg.registerWord(temp.positions);
+		reg.registerWord(temp.positions, temp.direction);
 		words.push_back(temp);
 	}
 	
-	reg.findCollisions();
+	std::vector<int> needToBeMoved = reg.findCollisions();
+	for(unsigned int i = 0; i < needToBeMoved.size(); ++i){
+		std::cout << needToBeMoved[i] << "\n\n";
+	}
     
     while (window.isOpen()){
         // Process events
