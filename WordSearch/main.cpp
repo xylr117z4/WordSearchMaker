@@ -17,6 +17,18 @@ void getFilesInDir(std::string dir){
 	} while(dp != NULL);
 }
 
+std::vector<Word> generateWordStart(std::vector<std::string> list, Registry& reg){
+	std::vector<Word> words;
+	for(unsigned int i = 0; i < 10; ++i){
+		Word temp;
+		temp.setWord(list[i]);
+		temp.slide((rand()%14)+6, (rand()%14)+6, rand()%8);
+		reg.registerWord(temp.positions, temp.direction);
+		words.push_back(temp);
+	}
+	return words;
+}
+
 int main(){
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
@@ -28,16 +40,13 @@ int main(){
 	text.setFont(font);
 	std::stringstream ss;
 	
-	std::string list[10] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+	std::vector<std::string> list = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 	std::vector<Word> words;
 	Registry reg;
 	
-	for(unsigned int i = 0; i < 10; ++i){
-		Word temp;
-		temp.setWord(list[i]);
-		temp.slide((rand()%14)+6, (rand()%14)+6, rand()%8);
-		reg.registerWord(temp.positions, temp.direction);
-		words.push_back(temp);
+	words = generateWordStart(list, reg);
+	for(unsigned int i = 0; i < words.size(); ++i){
+		reg.spread(words[i].positions, words[i].direction);
 	}
 	
 	std::vector<int> needToBeMoved = reg.findCollisions();

@@ -33,6 +33,12 @@ std::vector<int> Registry::findCollisions(){
 	return needToBeMoved;
 }
 
+bool Registry::spread(ws::vector& positions, int& dir){
+	//attempt to move each of the elements up to 8 times checkign collisions each time until there are 0 remaining return false if unable to spread the words.
+	//if needed regenerating the start positions of the words is an option.
+	return true; //if there's no more collisions return true
+}
+
 bool Registry::alreadyBeingMoved(std::vector<int> moving, int id){
 	for(unsigned int i = 0; i < moving.size(); ++i){
 		if(moving[i] == id){

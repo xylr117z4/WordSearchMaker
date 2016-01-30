@@ -11,6 +11,7 @@ public:
 	int wordCount;
 	void registerWord(ws::vector poses, int dir);
 	std::vector<int> findCollisions();
+	bool spread(ws::vector& positions, int& dir);
 	bool alreadyBeingMoved(std::vector<int> moving, int id);
 };
 
